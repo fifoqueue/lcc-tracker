@@ -1,0 +1,32 @@
+{
+  "name": "lcc-tracker",
+  "version": "0.0.1",
+  "description": "This script tracks each LCC's events to help me and my acquaintance to get a good deal on their flight ticket.",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fifoqueue/lcc-tracker.git"
+  },
+  "author": "FiLo",
+  "private": true,
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fifoqueue/lcc-tracker/issues"
+  },
+  "homepage": "https://github.com/fifoqueue/lcc-tracker#readme",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "croner": "^8.1.1",
+    "jsdom": "^24.1.1",
+    "redis": "^4.7.0"
+  },
+  "packageManager": "yarn@4.4.0"
+}
