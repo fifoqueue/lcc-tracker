@@ -25,8 +25,8 @@ const { instance } = require('./instance');
         })),
       });
     });
-    await Cron(config.cronExpression || '*/10 * * * * *', () => {
+    (new Cron(config.cronExpression || '*/10 * * * * *', () => {
       worker.postMessage('RUN');
-    }).trigger();
+    })).trigger();
   }
 })();
