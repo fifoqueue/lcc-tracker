@@ -13,8 +13,8 @@ parentPort?.on('message', (async (message) => {
       lang: 'kr',
     },
   });
-  const newEvents = page.content.filter((el) => el.id > lastNo);
-  if (!newEvents.length) {
+  const newEvents = page.content?.filter((el) => el.id > lastNo);
+  if (!newEvents?.length) {
     parentPort.postMessage({ isNew: false, newArticles: [] });
     return false;
   }

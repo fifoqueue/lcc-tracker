@@ -26,7 +26,7 @@ parentPort?.on('message', (async (message) => {
       page: 1,
       perPage: 3,
       adUnit: 'MW_CAFE_BOARD',
-      menuId: 224,
+      menuId: 204,
     },
     headers: {
       Cookie: naverCookie,
